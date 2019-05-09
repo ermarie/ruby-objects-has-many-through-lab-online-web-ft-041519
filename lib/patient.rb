@@ -1,3 +1,5 @@
+require 'pry'
+
 class Patient
 
   @@all = []
@@ -26,6 +28,7 @@ class Patient
   end
 
   def doctors
+    
     appointments.map { |appointment| appointment.doctor }
   end
 
